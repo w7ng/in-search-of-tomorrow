@@ -1,22 +1,29 @@
 const rooms = [
   {
-    id: 100,
-    title: "Room 1",
-    description: "You are in an office.",
-    image: "path/to/room1.jpg",
+    id: 0,
+    title: "Front Room",
+    description: "You are in an office's main room.",
+    image: "images/front-room.jpeg",
     choices: [
-      { text: "Go right", nextRoom: 1 },
-      { text: "Go left", nextRoom: 2 },
+      { text: "Go to stairs", nextRoom: 1 },
+      { text: "Go to meeting room", nextRoom: 2 },
     ],
   },
   {
-    id: 101,
-    title: "Room 2",
-    description: "You find a bug in the code.",
-    image: "path/to/room2.jpg",
+    id: 1,
+    title: "Stairs",
+    description: "You are at the office's stairwell",
+    image: "images/stairs.jpeg",
+    choices: [{ text: "Go back to front room", nextRoom: 0 }],
+  },
+  {
+    id: 2,
+    title: "Meeting Room",
+    description: "You are at the office's meeting room",
+    image: "images/meeting-room.jpeg",
     choices: [
-      { text: "change this", nextRoom: 3 },
-      { text: "change that", nextRoom: 0 },
+      { text: "Go to stairs", nextRoom: 1 },
+      { text: "Go to front room", nextRoom: 0 },
     ],
   },
 ];
@@ -41,3 +48,5 @@ function goToRoom(roomId) {
     roomChoices.appendChild(btn);
   });
 }
+
+goToRoom(0);
