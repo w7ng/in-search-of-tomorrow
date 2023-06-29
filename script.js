@@ -1,6 +1,6 @@
 const rooms = [
   {
-    id: 0,
+    id: 100,
     title: "Room 1",
     description: "You are in an office.",
     image: "path/to/room1.jpg",
@@ -10,7 +10,7 @@ const rooms = [
     ],
   },
   {
-    id: 1,
+    id: 101,
     title: "Room 2",
     description: "You find a bug in the code.",
     image: "path/to/room2.jpg",
