@@ -1,26 +1,26 @@
 const rooms = [
   {
     id: 0,
-    title: "Front Room",
-    description: "You are in an office's main room.",
-    image: "images/cemetery_01.jpg",
+    title: "The Bridge",
+    description: "You stand at the entrance to the bridge.",
+    image: "images/bridge-start.jpg",
     choices: [
       { text: "go back",  verticalPosition:"200px", horizontalPosition:"-300px",  nextRoom: 0 },
-      { text: "get closer",  verticalPosition:"200px", horizontalPosition:"500px", nextRoom: 1 },
+      { text: "go to stairs",  verticalPosition:"100px", horizontalPosition:"700px", nextRoom: 1 },
     ],
   },
   {
     id: 1,
     title: "Stairs",
-    description: "You are at the office's stairwell",
-    image: "images/cemetery_02.jpg",
-    choices: [{ text: "keep going",  verticalPosition:"10px", horizontalPosition:"800px", nextRoom: 2 }],
+    description: "You are at the stairs leading down to the deck.",
+    image: "images/steps-down.jpg",
+    choices: [{ text: "continue down",  verticalPosition:"10px", horizontalPosition:"800px", nextRoom: 2 }],
   },
   {
     id: 2,
-    title: "Meeting Room",
-    description: "You are at the office's meeting room",
-    image: "images/cemetery_03.jpg",
+    title: "The Deck",
+    description: "You stand at a deck overlooking the underpass.",
+    image: "images/deck-scene.jpg",
     choices: [
       { text: "I think i see something", verticalPosition:"500px", horizontalPosition:"100px", nextRoom: 3 },
       { text: "Go to front room", verticalPosition:"200px", horizontalPosition:"300px", nextRoom: 0 },
@@ -28,9 +28,9 @@ const rooms = [
   },
   {
     id: 3,
-    title: "Meeting Room",
-    description: "You are at the office's meeting room",
-    image: "images/cemetery_04.jpg",
+    title: "Stairs",
+    description: "You are at the bottom of the stairs leading back to the bridge entrance.",
+    image: "images/stairs-up.jpg",
     choices: [
       { text: "I think i see something",  verticalPosition:"200px", horizontalPosition:"300px", nextRoom: 4 },
       { text: "Go to front room",  verticalPosition:"200px", horizontalPosition:"300px", nextRoom: 0 },
